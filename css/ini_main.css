@@ -2,6 +2,37 @@ body {
 	background: url(../img/bkg_ini.png)
 }
 
-div #idiomes {
+div#ini {
+	width: 738px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
+
+div#idiomes {
+	display: inline-block;
+	width: 180px;
+}
+
+a {
+	color: black;
+	font-style: oblique;
+	text-shadow: 3px 4px 13px rgba(135,26,26,0.45);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: medium;
+}
+
+img {
+	display: block;
+}
+
+img#imgc {
+	width: 738px;
+	height: 501px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: auto;
+}
+

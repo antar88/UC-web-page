@@ -4,10 +4,12 @@
 		<link rel="stylesheet" type="text/css" href="css/ini_main.css"></link>
 		<title> Undead Coders </title>
 	</header>
-	<body>
-		<img id="logocentral"/>
-		<div id = "idiomes">
-			<a class="nonblue" href="../main.php?lang=cat"> &nbsp  catalˆ </a> | <a class="nonblue" href="about.php?lang=cast"> espa–ol </a> | <a class="nonblue" href="about.php?lang=eng"> english </a>
+	<body >
+		<div id="ini">
+			<img id="imgc" src="img/hi.png"/>
+			<div id="idiomes">
+				<a href="main.php?lang=cat"> catal&agrave; </a> | <a href="main.php?lang=esp"> espa&ntilde;ol </a> | <a href="main.php?lang=eng"> english </a>
+			</div>
 		</div>
 	</body>
 </html>

@@ -8,5 +8,6 @@ function ucTemplates () {
 	$smarty->compile_dir = 'templates/templates_c/';
 	$smarty->config_dir = 'templates/configs/';
 	$smarty->cache_dir = 'templates/cache/';
+	$smarty->caching = true;
 	return $smarty;
 }
