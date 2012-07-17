@@ -1,0 +1,10 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+   <appender name="ucAppender" class="LoggerAppenderFile">
+       <param name="file" value="var/log/uc.log" />
+        <layout class="LoggerLayoutTTCC" />
+   </appender>
+   <root>
+       <level value="ALL" />
+       <appender_ref ref="ucAppender" />
+   </root>
+</configuration>

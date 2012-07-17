@@ -1,0 +1,736 @@
+/*
+	Blue print CSS framework reset
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: Arial,Helvetica,sans-serif;
+  vertical-align: baseline; 
+}
+
+body { 
+  line-height: 1.5;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+/*
+	Start Kewego's labs CSS
+*/
+
+body
+{
+	background-color: #181818;
+	color: #ccc;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+
+a,
+a:visited
+{
+	color: #cccccc;
+	text-decoration: underline;
+	/*font-weight: bold;*/
+}
+
+.hidden
+{
+	display: none;
+}
+
+
+div.module_header div.container,
+div.page div.container,
+div.module_footer div.container
+{
+	width: 980px;
+	margin-left: auto; 
+	margin-right: auto;
+	text-align: left;
+}
+
+div.module_header
+{
+	background-image: url(/img/mast_solid_none.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100px;	
+}
+
+div.page
+{
+	display: block;
+	float: left;
+	padding-top: 15px;
+	padding-bottom:30px;
+	width: 100%;
+	border-bottom: 1px solid #474747;
+}
+
+body.index div.page
+{
+	background-image: url(/img/welcome.jpg);
+	background-repeat: no-repeat;
+	background-position: center 1px;
+}
+
+div.page,
+h1.many_test 
+{
+	background-color: #333;
+}
+
+div.module_footer
+{
+	background-color: #181818;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 150px;
+}
+
+div.module_footer div.container
+{
+	padding-top:15px;
+}
+
+
+div.labs_logo
+{
+	display: block;
+	float: left;
+}
+
+div.labs_logo a
+{
+	background-image: url(/img/mast_solid_none.png);
+	background-position: 0 -150px;
+	background-repeat: no-repeat;
+	display: block;
+	height: 80px;
+	width: 210px;
+	margin-top: 12px;
+}
+
+div.select_page
+{
+	display: block;
+	float: right;
+	margin-top: 35px;
+	position: relative;
+}
+
+div.select_page a.small_button
+{
+	float: left;
+	margin-left: 8px;
+}
+
+h1
+{
+	width: 100%;
+
+}
+
+h2
+{
+	position: relative;
+}
+
+h1.tests 
+{
+	background-image: url(/img/trio.png);
+	background-repeat: no-repeat;
+	padding-top: 2px;
+}
+
+h1.test
+{
+	background-image: url(/img/eprouvette.png);
+	background-repeat: no-repeat;
+	padding-top: 2px;
+} 
+
+h1 strong,
+fieldset legend
+{
+	color: #94c83d;
+	font-size: 22px;
+}
+
+h2 strong
+{
+	color: white;
+	font-size: 20px;
+}
+
+h3 strong
+{
+	color: #94C83D;
+	font-size: 15px;
+}
+
+h1 span
+{
+	font-size: 17px;
+}
+
+
+h1.double_row span
+{
+	padding-bottom: 15px;
+}
+
+
+h1.single_row strong
+{
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+h1.single_row strong,
+h1.single_row span,
+h1.double_row strong,
+h1.double_row span
+{
+	margin-left: 90px;
+	display: block;
+}
+
+div.separator
+{
+	background-image: url(/img/mast_solid_none.png);
+	background-position: 0px -400px;
+	background-repeat: repeat-x;
+	clear: both;
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	border-bottom:1px solid #444444;
+}
+
+/* HACK ie 6 + 7 */
+* body div.separator,
+* html div.separator
+{
+	height: 2px;
+	border-bottom: 0;
+}
+
+em.expand_button
+{
+	background-image: url(/img/mast_solid_none.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	top: 4px;
+	display: block;
+	width: 22px;
+	height: 22px;
+}
+
+em.expand_button.plus
+{
+	background-position: 0px -300px;
+}
+
+em.expand_button.minus
+{
+	background-position: -100px -300px;
+}
+
+div.welcome
+{
+	display: block;
+	height: 260px;	
+}
+
+div.column31
+{
+	display: block;
+	float: left;
+	width: 31%;
+}
+
+div.column31 a.big_button
+{
+	margin-top: 35px;
+	margin-left: 80px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+div.column2
+{
+	display: block;
+	float: left;
+	width: 2%;
+	height: 1px;
+}
+
+a.big_button
+{
+	display: block;
+	height: 36px;
+}
+
+a.big_button,
+a.big_button:visited
+{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.big_button:hover,
+div.module_footer div.left a.follow_us:hover
+{
+	opacity: 0.6;
+	filter : alpha(opacity=60);
+}
+
+a.big_button span.left
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	display: block;
+	height: 36px; 
+	width: 34px;
+	float: left;
+}
+
+a.big_button strong
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: -200px 0px;
+	display: block;
+	height: 36px; 
+	float: left;
+}
+
+a.big_button strong span
+{
+	display: block;
+	padding-top: 8px;
+}
+
+a.big_button span.right
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: -100px 0px;
+	display: block;
+	height: 36px; 
+	width: 34px;
+	float: left;	
+}
+
+a.tag
+{
+	display: block;
+	height: 26px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+a.tag,
+a.tag:visited
+{
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.tag:hover
+{
+	color: #94C83D;
+}
+
+a.tag span.left
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: 0 -50px;
+	display: block;
+	height: 26px; 
+	width: 24px;
+	float: left;
+}
+
+a.tag strong
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: -200px -50px;
+	display: block;
+	height: 26px; 
+	float: left;
+}
+
+a.tag strong span
+{
+	display: block;
+	padding-top: 3px;
+}
+
+a.tag span.right
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: -100px -50px;
+	display: block;
+	height: 26px; 
+	width: 24px;
+	float: left;	
+}
+
+div.module_footer div.left
+{
+	display: block;
+	float: left;
+	width: 300px;
+}
+
+div.module_footer div.left a.follow_us
+{
+	background-image: url(/img/mast_solid_none.png);
+	background-repeat: no-repeat;
+	background-position: -400px -150px;
+	display: block;
+	height: 52px; 
+	width: 232px;
+	margin-bottom: 15px;
+}
+
+div.module_footer div.left a,
+div.module_footer div.left a:visited
+{
+	color: #CCCCCC;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+div.module_footer div.separator
+{
+	background-image: url(/img/mast_solid_none.png);
+	background-repeat: no-repeat;
+	background-position: -800px -150px;
+	display: block;
+	float: left;
+	width: 2px;
+	height: 128px;
+	clear: none;
+	margin: 0px;
+	margin-right: 15px;
+}
+
+div.module_footer div.right
+{
+	display: block;
+	float: left;
+}
+
+div.module_footer div.stuff
+{
+	width: 478px;
+}
+
+div.module_footer div.stuff a
+{
+	display: block;
+	float: left;
+	margin-top: 10px;
+}
+
+div.retro_logo
+{
+	display: block;
+	float: left;
+	width: 168px;
+	background-image: url(/img/retro_logo.png);
+	background-repeat: no-repeat;
+	height: 110px;
+	margin-top: 28px;
+	margin-left: 0px;
+	
+}
+
+a.small_button
+{
+	display: block;
+	height: 30px;
+}
+
+a.small_button,
+a.small_button:visited
+{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.small_button span.left
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -100px;
+	display: block;
+	height: 30px; 
+	width: 12px;
+	float: left;
+}
+
+a.small_button:hover span.left
+{
+	background-position: 0px -150px;
+}
+
+a.small_button strong
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: -200px -100px;
+	display: block;
+	height: 30px; 
+	float: left;
+}
+
+a.small_button:hover strong
+{
+	background-position: -200px -150px;
+}
+
+a.small_button strong span
+{
+	display: block;
+	padding-top: 4px;
+}
+
+a.small_button span.right
+{
+	background-image: url(/img/buttons.gif);
+	background-repeat: no-repeat;
+	background-position: -100px -100px;
+	display: block;
+	height: 30px; 
+	width: 12px;
+	float: left;	
+}
+
+a.small_button:hover span.right
+{
+	background-position: -100px -150px;
+}
+
+div.config_switch div.select
+{
+	display: block;
+	margin-top: 10px;
+	text-align: right;
+}
+
+div.config_switch div.embed
+{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+div.iphone 
+{
+	background-image: url(/img/iphone-300.png);
+	background-repeat: no-repeat;
+	background-position:3px 0;
+	display: block;
+	width: 438px;
+	height: 556px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.iphone object
+{
+	margin-top: 102px;
+	padding-left: 0px;
+}
+
+div.iphone a
+{
+	background-image: url(/img/app_store.png);
+	background-repeat: no-repeat;
+	display: block;
+	width: 157px;
+	height: 53px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+/*
+	extended_select 
+*/
+div.extended_select
+{
+	position: relative;
+	font-size: 12px;
+	dsplay: block;
+	float: left;
+	z-index: 10;
+}
+
+div.extended_select div.value
+{
+	background-image: url(/img/mast_extended_select.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 30px;
+	display: block;
+	cursor: pointer;
+	font-size: 12px;
+	float: left;
+}
+
+div.extended_select div.value.on
+{
+	background-position: 0px -100px;
+}
+
+div.extended_select div.value span.left
+{
+	display: block;
+	float: left;
+	width: 5px;
+	height: 30px;
+}
+
+div.extended_select div.value strong
+{
+	margin-left: 10px;
+	background-color: transparent;
+	color: #cccccc;
+	border: 0px;
+	display: block;
+	float: left;
+	height: 30px;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+div.extended_select div.value span.right
+{
+	background-image: url(/img/mast_extended_select.png);
+	background-repeat: no-repeat;
+	background-position: right 0px;
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+}
+
+div.extended_select div.value.on span.right
+{
+	background-position: right -100px;
+}
+
+div.extended_select div.choice
+{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+
+}
+
+div.extended_select div.choice ul
+{
+	list-style: none; 
+}
+
+div.extended_select div.choice ul li
+{
+	background-image: url(/img/mast_extended_select.png);
+	background-repeat: no-repeat;	
+	background-color: black;
+	cursor: pointer;
+	
+}
+
+div.extended_select div.choice ul li.off
+{
+	background-position: right -200px;
+}
+
+div.extended_select div.choice ul li.on
+{
+	background-position: right -300px;
+}
+
+div.extended_select div.choice ul li.off_last
+{
+	background-position: right -450px;
+}
+
+div.extended_select div.choice ul li.on_last
+{
+	background-position: right -550px;
+}
+
+div.extended_select div.choice ul li strong
+{
+	background-image: url(/img/mast_extended_select.png);
+	background-repeat: no-repeat;
+	background-position: -989px -300px;
+
+	padding-left: 15px;
+	padding-right: 15px;
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+	
+	/*font-weight: normal;
+	color: white;
+	display: block;
+	height: 30px;*/
+	/*padding-right: 20px;*/
+}
+
+div.extended_select div.choice ul li.off_last strong
+{
+	background-position: -983px -400px;
+}
+
+div.extended_select div.choice ul li.on_last strong
+{
+	background-position: -983px -500px;
+}
