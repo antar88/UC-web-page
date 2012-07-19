@@ -1,0 +1,138 @@
+/* Basiv elements */
+body {
+	background: #999999;
+	margin: 0px;
+	
+}
+
+div#menu {
+	
+	background-image: url('../img/background.png');
+	width: 1000px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-top: 0px;
+
+}
+
+div#slides {
+	width: 1000px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+
+}
+
+div#content {
+	
+	background-color: red;
+	width: 1000px;
+	margin: 0px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -16px;
+
+}
+
+footer {
+	background-color: black;
+	width: 1000px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -16px;
+}
+
+/* Menú */
+
+img {
+border: none;
+
+}
+
+img#logo {
+	position: absolute;
+	height: 60px;
+	width: 174px;
+	margin-left: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+img#mpopkorn {
+	position: absolute;
+	height: 100px;
+	width: 110px;
+	margin-left: 500px;
+}
+
+img#malertas {
+	position: absolute;
+	height: 100px;
+	width: 110px;
+	margin-left: 625px;
+}
+
+img#msupport {
+	position: absolute;
+	height: 100px;
+	width: 110px;
+	margin-left: 740px;
+}
+
+img#mabout {
+	
+	position: absolute;
+	height: 100px;
+	width: 110px;
+	margin-left: 840px;
+}
+
+/* Slides */
+
+
+.slides_container {
+	/*Contenidor exterior*/
+	width:1000px;
+	height:450px;	
+}
+
+.slides_container div {
+	/*Contenidor interior*/
+	width:1000px;
+	height:450px;
+	display:block;
+}
+
+	/* pagination per slides*/
+	
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/slides/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}

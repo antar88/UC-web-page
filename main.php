@@ -23,8 +23,6 @@
 		
 	$larr  = array('cat' => $cat, 'esp' => $esp,'eng' => $eng);
 	$tmplm->assign('langs',$larr);
-	var_dump($l);
 	$tmplm->assign('lang_sel', $l);
-	var_dump($l);
 	
 	$tmplm->display('main.tpl');
