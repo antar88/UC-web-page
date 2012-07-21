@@ -4,10 +4,10 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"></link> 
 		<link rel="icon" href="img/mini.png" type="image/x-icon">
 		
-		<<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		
 		<script src="includes/slides/slides.jquery.js"></script>
-		
+
 		 <script type="text/javascript">     
 		 	//Jquey power                                    
 			 $(document).ready(function(){
@@ -69,14 +69,14 @@
 				}) ;
 				
 			 });  
-			                                    
+			                                   
 	     </script>
 	     <script>
 	     	//Cridem als slides
 			$(function(){
 				$('#slides').slides({
 					preload: true,
-					preloadImage: 'img/loading.gif',
+					preloadImage: 'img/slides/loading.gif',
 					play: 5000,
 					pause: 2500,
 					hoverPause: true
@@ -84,9 +84,7 @@
 			});
 
         </script>
-	</header>
-	<body>
-		<div id="menu"> 
+        <div id="menu"> 
 			<img id="logo" src="img/logo.png"></img>
 			<img id="mpopkorn" src="img/menu/m_popkorn_des.png"/>
 			<img id="malertas" src="img/menu/m_alertas_des.png"/>
@@ -104,44 +102,59 @@
 			{/nocache}
 			
 		</div>
+	</header>
+	<body>
+	
+		
+		{nocache}
 		<div id="slides">
 			<div class="slides_container">
-                <div>
-                    <img src="img/slides/a.png">
-                </div>
-                <div>
-                    <img src="img/slides/b.png">
-                </div>
-                <div>
-                    <img src="img/slides/c.png">
-                </div>
-                <div>
-                    <img src="img/slides/d.png">
-                </div>
+					
+					<div>
+                    	<img src="img/slides/a.png">
+                    </div>
+                    <div>
+                    	<img src="img/slides/b.png">
+                    </div>
+                    <div id="cv1">
+               			<video id="v1" autoplay="false" controls="" height="300" width="600" src="vid/intro.m4v" />
+					</div>
             </div>
 		</div>
+		
 		<div id="content"> 
 			
-			<p> Info que porta Smarty: <br>
-			Llengua seleccionada: {nocache}{$lang.hi}{/nocache} <br>
-			<ul>
-			{nocache}
-			{foreach from=$langs item=i key=k}
-				{$k}:
-				{foreach from=$i item=j key=kj}
-			    	<li>{$kj}-->{$j}</li>
-			    {/foreach}
-			    <br>
-			{/foreach}
-			{/nocache}
-			</ul>
+			<p id="desc"> 
+				{if $lang_sel == 'cat'}
+					{$langs.cat.desc}
+				{elseif $lang_sel == 'esp'}
+					{$langs.esp.desc}
+				{else}
+					{$langs.eng.desc}
+				{/if}
+			</p>
+			
+			
+			
 		</p>
 			
 		</div>
 		
 		
 	</body>
-	<footer>
-		
+	<footer class="f1">
+		<div id="pf1" class="pf">
+			<h2>{nocache} {$langs.$lang_sel.uccomp} {/nocache}</h2>
+			<div id="uccomp">
+				<div id="alex"><a class="notblue" href="http://www.alexvn.com" target="_blank">  Àlex Vergara </a></div> 
+				<div id="antar"> <a class="notblue" href="http://www.antarmf.com" target="_blank">  Antar Moratona</a> </div>
+			</div>
+		</div>
+		<p id="pf2" class="pf">
+			
+		</p>
+		<p id="p3" class="pf"> 
+			
+		</p>
 	</footer>
 </html>

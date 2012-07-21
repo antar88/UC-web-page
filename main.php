@@ -8,17 +8,17 @@
 	
 	$cat = array(
 		'hi' => 'Hola i benvinguts...', 
-		'b' => 'pilota'
+		'uccomp' => 'Undead Coders són:'
 		);
 		
 	$esp = array(
 		'hi' => 'Hola i bienvenidos...', 
-		'b' => 'pelota'
+		'uccomp' => 'Undead Coders son:'
 		);
 	
 	$eng = array(
-		'hi' => 'Hello and welcome...', 
-		'b' => 'ball'
+		'desc' => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis venenatis velit et metus. Duis lacinia leo in velit. Sed tristique. Sed id turpis malesuada nulla bibendum iaculis. In nec velit. Fusce augue diam, sollicitudin eu, porttitor vel, euismod vel, nisl. Aenean venenatis quam eu massa. Pellentesque non lorem non tortor placerat vulputate. Maecenas eleifend nibh ut lectus. Morbi eget eros. Sed luctus porta justo. Fusce eget est eu elit suscipit cursus. Duis a arcu et diam suscipit facilisis. Pellentesque lobortis libero et metus.", 
+		'uccomp' => 'Undead Coders are:'
 		);
 		
 	$larr  = array('cat' => $cat, 'esp' => $esp,'eng' => $eng);

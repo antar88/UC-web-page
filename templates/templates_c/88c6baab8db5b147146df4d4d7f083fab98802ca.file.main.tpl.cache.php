@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.11, created on 2012-07-19 20:23:50
+<?php /* Smarty version Smarty-3.1.11, created on 2012-07-20 20:01:46
          compiled from "templates/main.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19399321865005c68ecc6f72-71170110%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '88c6baab8db5b147146df4d4d7f083fab98802ca' => 
     array (
       0 => 'templates/main.tpl',
-      1 => 1342722223,
+      1 => 1342807304,
       2 => 'file',
     ),
   ),
@@ -21,12 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'lang_sel' => 1,
-    'lang' => 1,
     'langs' => 1,
-    'k' => 1,
-    'i' => 1,
-    'kj' => 1,
-    'j' => 1,
   ),
   'has_nocache_code' => true,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -36,10 +31,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<link rel="stylesheet" type="text/css" href="css/main.css"></link> 
 		<link rel="icon" href="img/mini.png" type="image/x-icon">
 		
-		<<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		
 		<script src="includes/slides/slides.jquery.js"></script>
-		
+
 		 <script type="text/javascript">     
 		 	//Jquey power                                    
 			 $(document).ready(function(){
@@ -117,14 +112,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				}) ;
 				
 			 });  
-			                                    
+			                                   
 	     </script>
 	     <script>
 	     	//Cridem als slides
 			$(function(){
 				$('#slides').slides({
 					preload: true,
-					preloadImage: 'img/loading.gif',
+					preloadImage: 'img/slides/loading.gif',
 					play: 5000,
 					pause: 2500,
 					hoverPause: true
@@ -132,9 +127,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			});
 
         </script>
-	</header>
-	<body>
-		<div id="menu"> 
+        <div id="menu"> 
 			<img id="logo" src="img/logo.png"></img>
 			<img id="mpopkorn" src="img/menu/m_popkorn_des.png"/>
 			<img id="malertas" src="img/menu/m_alertas_des.png"/>
@@ -156,68 +149,71 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			
 			
 		</div>
+	</header>
+	<body>
+	
+		
+		
 		<div id="slides">
 			<div class="slides_container">
-                <div>
-                    <img src="img/slides/a.png">
-                </div>
-                <div>
-                    <img src="img/slides/b.png">
-                </div>
-                <div>
-                    <img src="img/slides/c.png">
-                </div>
-                <div>
-                    <img src="img/slides/d.png">
-                </div>
+					
+					<div>
+                    	<img src="img/slides/a.png">
+                    </div>
+                    <div>
+                    	<img src="img/slides/b.png">
+                    </div>
+                    <div id="cv1">
+               			<video id="v1" autoplay="false" controls="" height="300" width="600" src="vid/intro.m4v" />
+					</div>
             </div>
 		</div>
+		
 		<div id="content"> 
 			
-			<p> Info que porta Smarty: <br>
-			Llengua seleccionada: <?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'lang\']->value[\'hi\'];?>
+			<p id="desc"> 
+				<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php if ($_smarty_tpl->tpl_vars[\'lang_sel\']->value==\'cat\'){?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
+
+					<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'langs\']->value[\'cat\'][\'desc\'];?>
 /*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
- <br>
-			<ul>
+
+				<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php }elseif($_smarty_tpl->tpl_vars[\'lang_sel\']->value==\'esp\'){?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
+
+					<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'langs\']->value[\'esp\'][\'desc\'];?>
+/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
+
+				<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php }else{ ?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
+
+					<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'langs\']->value[\'eng\'][\'desc\'];?>
+/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
+
+				<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php }?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
+
+			</p>
 			
-			<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php  $_smarty_tpl->tpl_vars[\'i\'] = new Smarty_Variable; $_smarty_tpl->tpl_vars[\'i\']->_loop = false;
- $_smarty_tpl->tpl_vars[\'k\'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars[\'langs\']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, \'array\');}
-foreach ($_from as $_smarty_tpl->tpl_vars[\'i\']->key => $_smarty_tpl->tpl_vars[\'i\']->value){
-$_smarty_tpl->tpl_vars[\'i\']->_loop = true;
- $_smarty_tpl->tpl_vars[\'k\']->value = $_smarty_tpl->tpl_vars[\'i\']->key;
-?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
-
-				<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'k\']->value;?>
-/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
-:
-				<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php  $_smarty_tpl->tpl_vars[\'j\'] = new Smarty_Variable; $_smarty_tpl->tpl_vars[\'j\']->_loop = false;
- $_smarty_tpl->tpl_vars[\'kj\'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars[\'i\']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, \'array\');}
-foreach ($_from as $_smarty_tpl->tpl_vars[\'j\']->key => $_smarty_tpl->tpl_vars[\'j\']->value){
-$_smarty_tpl->tpl_vars[\'j\']->_loop = true;
- $_smarty_tpl->tpl_vars[\'kj\']->value = $_smarty_tpl->tpl_vars[\'j\']->key;
-?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
-
-			    	<li><?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'kj\']->value;?>
-/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
---><?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'j\']->value;?>
-/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
-</li>
-			    <?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php } ?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
-
-			    <br>
-			<?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php } ?>/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
-
 			
-			</ul>
+			
 		</p>
 			
 		</div>
 		
 		
 	</body>
-	<footer>
-		
+	<footer class="f1">
+		<div id="pf1" class="pf">
+			<h2> <?php echo '/*%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/<?php echo $_smarty_tpl->tpl_vars[\'langs\']->value[$_smarty_tpl->tpl_vars[\'lang_sel\']->value][\'uccomp\'];?>
+/*/%%SmartyNocache:19399321865005c68ecc6f72-71170110%%*/';?>
+ </h2>
+			<div id="uccomp">
+				<div id="alex"><a class="notblue" href="http://www.alexvn.com" target="_blank">  Àlex Vergara </a></div> 
+				<div id="antar"> <a class="notblue" href="http://www.antarmf.com" target="_blank">  Antar Moratona</a> </div>
+			</div>
+		</div>
+		<p id="pf2" class="pf">
+			
+		</p>
+		<p id="p3" class="pf"> 
+			
+		</p>
 	</footer>
 </html><?php }} ?>
